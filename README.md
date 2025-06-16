@@ -8,7 +8,7 @@ A privacy-focused, offline-first note-taking application built with React, clien
 
 Experience the app in action:
 
-👉 [Secure Notes App Live Demo](https://pallavi-muttineni.github.io/secure-notes-app/)
+👉 [Secure Notes App Live Demo](http://localhost:3000/) 
 
 ---
 
