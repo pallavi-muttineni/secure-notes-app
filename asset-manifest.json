@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/secure-notes-app/static/css/main.e6c13ad2.css",
+    "main.js": "/secure-notes-app/static/js/main.0352722c.js",
+    "static/js/488.3a69714d.chunk.js": "/secure-notes-app/static/js/488.3a69714d.chunk.js",
+    "index.html": "/secure-notes-app/index.html",
+    "main.e6c13ad2.css.map": "/secure-notes-app/static/css/main.e6c13ad2.css.map",
+    "main.0352722c.js.map": "/secure-notes-app/static/js/main.0352722c.js.map",
+    "488.3a69714d.chunk.js.map": "/secure-notes-app/static/js/488.3a69714d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.0352722c.js"
+  ]
+}
