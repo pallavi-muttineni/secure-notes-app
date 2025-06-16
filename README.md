@@ -1,70 +1,120 @@
-# Getting Started with Create React App
+# 🔐 Secure Notes App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A privacy-focused, offline-first note-taking application built with React, client-side AES encryption, and IndexedDB storage. All notes are encrypted in the browser using a master password, ensuring that only you can read your data.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Live Demo
 
-### `npm start`
+Experience the app in action:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+👉 [Secure Notes App Live Demo](https://pallavi-muttineni.github.io/secure-notes-app/)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 🛠 Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* Offline-First: Works entirely in the browser without a backend server.
+* AES Encryption: Notes are encrypted client-side using a master password.
+* IndexedDB Storage:Persist notes securely in browser storage.
+* Search: Quickly find notes by keyword.
+* Pin & Archive: Organize notes using pin and archive actions.
+* Edit & Delete: Easily update or remove your notes.
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## ⚙ Technologies Used
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+* [React](https://reactjs.org/)
+* [CryptoJS](https://www.npmjs.com/package/crypto-js)
+* [idb (IndexedDB)](https://www.npmjs.com/package/idb)
+* [gh-pages](https://www.npmjs.com/package/gh-pages) for deployment
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## 📁 Project Structure
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+secure-notes-app/
+├── public/
+│   └── index.html
+├── src/
+│   ├── components/
+│   │   ├── ArchivedNotes.js
+│   │   ├── NoteEditor.js
+│   │   ├── NoteList.js
+│   │   ├── PasswordPrompt.js
+│   │   └── SearchBar.js
+│   ├── utils/
+│   │   ├── cryptoUtils.js
+│   │   └── db.js
+│   ├── App.js
+│   └── index.js
+├── .gitignore
+├── package.json
+└── README.md
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## 💻 Installation & Development
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. *Clone the repository*
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+   bash
+   git clone https://github.com/pallavi-muttineni/secure-notes-app.git
+   cd secure-notes-app
+   
 
-### Code Splitting
+2. *Install dependencies*
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+   bash
+   npm install
+   
 
-### Analyzing the Bundle Size
+3. *Run the development server*
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+   bash
+   npm start
+   
 
-### Making a Progressive Web App
+4. *Open in browser*
+   Navigate to http://localhost:3000 and enter your master password to start using the app.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+## 📦 Build & Deploy
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+This project uses gh-pages to deploy to GitHub Pages.
 
-### Deployment
+1. **Ensure package.json has the correct homepage**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+   json
+   "homepage": "https://pallavi-muttineni.github.io/secure-notes-app",
+   
 
-### `npm run build` fails to minify
+2. **Install gh-pages (if not already)**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+   bash
+   npm install --save-dev gh-pages
+   
+
+3. *Deploy to GitHub Pages*
+
+   bash
+   npm run deploy
+   
+
+Your app will be live at the URL above.
+
+---
+
+## 🔐 Usage
+
+1. On first load, enter your *master password* to unlock the app.
+2. *Add notes* in the editor; they’ll be encrypted and saved.
+3. *Search* notes, *pin* important ones, or *archive* old notes.
+4. *Edit* or *delete* notes as needed.
+
+---
+
